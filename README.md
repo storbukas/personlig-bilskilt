@@ -4,10 +4,12 @@
 ---
 
 <p align="center">
-  <img src="https://git.storbukas.no/personlig-kjennemerke.svg?kjennemerke=GITHUB">
+  <img src="http://personlig-bilskilt.storbukas.no/AWESOME">
+  <img src="http://personlig-bilskilt.storbukas.no/GITHUB">
+  <img src="http://personlig-bilskilt.storbukas.no/BADGE">
 </p>
 
 ## Bruk
 ```
-<img src="https://git.storbukas.no/personlig-kjennemerke.svg?kjennemerke=<KJENNEMERKE>
+<img src="https://personlig-bilskilt.storbukas.no/<TEKST>">
 ```
