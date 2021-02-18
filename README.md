@@ -1,5 +1,5 @@
-# Personlig kjennemerke
-> Personlig kjennemerke for bilskilt i Norge i SVG-format. Kan brukes som badge på GitHub
+# Personlig bilskilt
+> Personlig bilskilt i SVG-format. Kan brukes som badge på GitHub.
 
 ---
 
