@@ -1,7 +1,7 @@
 import express = require('express');
 import fs = require('fs');
 
-const PORT = Number(process.env.PORT) || 80;
+const PORT = Number(process.env.PORT) || 8080;
 const app = express();
 
 app.get(['/:kjennemerke', '/', '*'], (req, res) => {
