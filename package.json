@@ -5,26 +5,17 @@
   "private": false,
   "license": "MIT",
   "author": "Lars Erik Storbukås",
+  "main": "./dist/index.js",
   "scripts": {
-    "prepare": "npm run gcp-build",
-    "pretest": "npm run gcp-build",
-    "test": "mocha test/*.test.js --exit",
-    "posttest": "npm run lint",
-    "lint": "tslint -p .",
     "start": "node ./dist/index.js",
     "gcp-build": "tsc -p .",
     "deploy": "gcloud app deploy"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "typescript": "^4.0.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
-    "chai": "^4.2.0",
-    "mocha": "^8.0.0",
-    "tslint": "^6.0.0",
-    "typescript": "^4.0.0",
-    "wait-port": "^0.2.7"
+    "typescript": "^3.2.2"
   }
 }
