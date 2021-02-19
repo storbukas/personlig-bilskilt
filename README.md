@@ -21,7 +21,7 @@ Bruk skilt-generatoren jeg har lagd til å generere SVG-filer av ditt skilt, sli
 
 ## Hvordan bruke?
 
-Alt du trenger å gjøre for å generere personlig bilskilt er å legge ved teksten du vil ha vist i url'en til [https://personlig-bilskilt.storbukas.no/DITT-SKILT](https://personlig-bilskilt.storbukas.no/). Det er en begrensing på syv tegn, samme som [Statens Vegvesen](https://www.vegvesen.no/kjoretoy/Eie+og+vedlikeholde/skilt/personlig-bilskilt).
+Alt du trenger å gjøre for å generere personlig bilskilt er å legge ved teksten du vil ha vist i URL'en til [https://personlig-bilskilt.storbukas.no/DITT-SKILT](https://personlig-bilskilt.storbukas.no/). Det er en begrensing på syv tegn, samme som [Statens Vegvesen](https://www.vegvesen.no/kjoretoy/Eie+og+vedlikeholde/skilt/personlig-bilskilt).
 
 > `https://personlig-bilskilt.storbukas.no/DITT-SKILT`
 
@@ -51,6 +51,70 @@ Du kan også bruke vanlige kjennemerker
 <a href="https://fiy.no/svv" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/PR12345">
 </a>
+
+## Deploy på GCP (Google Cloud Platform)
+
+> *Forutsetter at du allerede har [satt opp et prosjekt på Google Cloud](https://cloud.google.com/ai-platform/notebooks/docs/before-you-begin)*.
+
+> Eksempel under forutsetter at du bruker Google Cloud Shell, noen av eksemplene som **Wev Preview** gjelder ikke dersom du benytter lokal terminal.
+
+---
+
+Start med å hente repoet
+
+```
+git clone https://github.com/storbukas/personlig-bilskilt
+```
+
+Gå inn i mappen
+
+```
+cd personlig-bilskilt
+```
+
+Cloud Shell lar deg teste applikasjonen før du deployer, sånn at du kan sjekke at den kjører som forventet.
+
+For å teste applikasjonen, skriv inn følgende
+
+```
+export PORT=8080 && npm install
+npm start
+```
+
+Se en forhåndsvisning av appen din ved å trykke på **"Web preview"**
+
+For å **deploye applikasjonen** må du kjøre
+
+```
+gcloud app deploy
+```
+
+Dersom deploy er vellyket, vil du få en melding som ligner på denne
+
+```
+Updating service [personlig-bilskilt]...done.
+Setting traffic split for service [personlig-bilskilt]...done.
+Deployed service [personlig-bilskilt] to [https://personlig-bilskilt-dot-storbukas-no.uc.r.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s personlig-bilskilt
+  
+To view your application in the web browser run:
+  $ gcloud app browse -s personlig-bilskilt
+```
+
+I mitt tilfelle kan jeg nå min applikasjon på: https://personlig-bilskilt-dot-storbukas-no.uc.r.appspot.com
+
+Jeg ønsket å ha en *litt* kortere URL, og valgte derfor å sette opp [dispatch.yaml](https://cloud.google.com/appengine/docs/standard/python/reference/dispatch-yaml) og [custom domain](https://cloud.google.com/appengine/docs/standard/python/mapping-custom-domains).
+
+**dispatch.yaml**
+```yaml
+dispatch:
+  - url: personlig-bilskilt.storbukas.no/*
+    service: personlig-bilskilt
+```
+
+Slik at jeg kan nå applikasjonen via https://personlig-bilskilt.storbukas.no.
 
 ## Standalone SVG-generering
 
