@@ -29,14 +29,14 @@ Alt du trenger å gjøre for å generere personlig bilskilt er å legge ved teks
 
 ```html
 <img src="https://personlig-bilskilt.storbukas.no/TACO">
-<img src="https://personlig-bilskilt.storbukas.no/RASK">
+<img src="https://personlig-bilskilt.storbukas.no/2SLOW">
 <img src="https://personlig-bilskilt.storbukas.no/1337">
 ```
 <a href="https://fiy.no/svv" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/TACO">
 </a>
 <a href="https://fiy.no/svv" target="_blank">
-  <img src="https://personlig-bilskilt.storbukas.no/RASK">
+  <img src="https://personlig-bilskilt.storbukas.no/2SLOW">
 </a>
 <a href="https://fiy.no/svv" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/1337">
