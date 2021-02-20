@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LFT Etica';
+    src: local('LFT Etica Regular'), local('LFT-Etica-Regular'),
+        url('LFTEtica.woff2') format('woff2'),
+        url('LFTEtica.woff') format('woff'),
+        url('LFTEtica.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

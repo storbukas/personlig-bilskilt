@@ -7,7 +7,7 @@ const app = express();
 app.get(['/:kjennemerke', '/', '*'], (req, res) => {
   let kjennemerke = req.params.kjennemerke;
 
-  fs.readFile('personlig-kjennemerke.svg', 'utf-8', function (err, data) {
+  fs.readFile('media/personlig-bilskilt.svg', 'utf-8', function (err, data) {
     if (err) {
       res.send("An error occurred.");
     } else {
