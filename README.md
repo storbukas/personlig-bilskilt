@@ -86,14 +86,36 @@ Du kan også generere andre skilttyper
   <img src="https://personlig-bilskilt.storbukas.no/svalbard/SNØ">
 </a>
 
-#### AMBASSADE
+
+#### SVALBARD
 
 ```html
-<img src="https://personlig-bilskilt.storbukas.no/ambassade/USA">
+<img src="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN">
 ```
 
 <a href="https://fiy.no/svv" target="_blank">
-  <img src="https://personlig-bilskilt.storbukas.no/ambassade/USA">
+  <img src="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN">
+</a>
+
+#### MILITÆR
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
+</a>
+
+
+#### AMBASSADE
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE">
 </a>
 
 ## Deploy på GCP (Google Cloud Platform)
@@ -254,7 +276,7 @@ Vennligst les [CONTRIBUTING](https://gist.github.com/storbukas/8cbe5783cb53d5e7a
 
 ## Versjonering
 
-Vi bruker [SemVer](http://semver.org/) for versjonering. For tilgjengelige versjoner, se [tags](https://github.com/storbukas/personlig-bilskilt/tags) i dette depotet
+Vi bruker [SemVer](http://semver.org/) for versjonering. For tilgjengelige versjoner, se [releases](https://github.com/storbukas/personlig-bilskilt/releases) i dette repoet.
 
 ## Lisens
 
