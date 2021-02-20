@@ -1,5 +1,5 @@
 import express = require('express');
-import { AMBASSADE_SKILT, settFarger, SVALBARD_SKILT, VANLIG_SKILT, VANLIG_SKILT_SVART_FLAGGBÅND, VAREBIL_SKILT } from './fargekoder';
+import { AMBASSADE_SKILT, MILITÆR_SKILT, RALLY_SKILT, settFarger, SVALBARD_SKILT, VANLIG_SKILT, VANLIG_SKILT_SVART_FLAGGBÅND, VAREBIL_SKILT } from './fargekoder';
 import { genererBilskilt } from './util';
 
 const PORT = Number(process.env.PORT) || 8080;
@@ -27,6 +27,18 @@ app.get('/ambassade/:kjennemerke', (req, res) => {
   let kjennemerke = req.params.kjennemerke;
 
   genererBilskilt(res, kjennemerke, AMBASSADE_SKILT);
+});
+
+app.get('/militaer/:kjennemerke', (req, res) => {
+  let kjennemerke = req.params.kjennemerke;
+
+  genererBilskilt(res, kjennemerke, MILITÆR_SKILT);
+});
+
+app.get('/rally/:kjennemerke', (req, res) => {
+  let kjennemerke = req.params.kjennemerke;
+
+  genererBilskilt(res, kjennemerke, RALLY_SKILT);
 });
 
 app.get(['/:kjennemerke', '/', '*'], (req, res) => {

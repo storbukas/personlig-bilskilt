@@ -17,7 +17,7 @@
     <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel">
 
       <!-- SKILTRAMME -->
-      <g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+      <g fill="#SKILTRAMME_FARGE" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
         <path vector-effect="none" fill-rule="evenodd" d="M12,8 L224,8 C226.209,8 228,9.79086 228,12 L228,50 C228,52.2091 226.209,54 224,54 L12,54 C9.79086,54 8,52.2091 8,50 L8,12 C8,9.79086 9.79086,8 12,8 " />
       </g>
 
