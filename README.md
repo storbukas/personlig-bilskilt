@@ -79,17 +79,6 @@ Du kan også generere andre skilttyper
 #### SVALBARD
 
 ```html
-<img src="https://personlig-bilskilt.storbukas.no/svalbard/SNØ">
-```
-
-<a href="https://fiy.no/svv" target="_blank">
-  <img src="https://personlig-bilskilt.storbukas.no/svalbard/SNØ">
-</a>
-
-
-#### SVALBARD
-
-```html
 <img src="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN">
 ```
 
