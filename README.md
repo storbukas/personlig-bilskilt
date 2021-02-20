@@ -3,11 +3,11 @@
 Skiltgenerator for personlig bilskilt i **SVG-format**. *Kan brukes som badge på GitHub.*
 
 <p align="center">
-  <a href="https://fiy.no/svv" target="_blank">
-    <img src="http://personlig-bilskilt.storbukas.no/GITHUB">
+  <a href="https://personlig-bilskilt.storbukas.no/GITHUB" target="_blank">
+    <img src="https://personlig-bilskilt.storbukas.no/GITHUB">
   </a>
-  <a href="https://fiy.no/svv" target="_blank">
-    <img src="http://personlig-bilskilt.storbukas.no/BADGE">
+  <a href="https://personlig-bilskilt.storbukas.no/BADGE" target="_blank">
+    <img src="https://personlig-bilskilt.storbukas.no/BADGE">
   </a>
 </p>
 
@@ -21,7 +21,7 @@ Bruk skilt-generatoren jeg har lagd til å generere SVG-filer av ditt skilt, sli
 
 ## Hvordan bruke?
 
-Alt du trenger å gjøre for å generere personlig bilskilt er å legge ved teksten du vil ha vist i URL'en til [https://personlig-bilskilt.storbukas.no/DITT-SKILT](https://personlig-bilskilt.storbukas.no/). Det er en begrensing på syv tegn, samme som [Statens Vegvesen](https://www.vegvesen.no/kjoretoy/Eie+og+vedlikeholde/skilt/personlig-bilskilt).
+Alt du trenger å gjøre for å generere [personlig bilskilt](https://fiy.no/svv) er å legge ved teksten du vil ha vist i URL'en til [https://personlig-bilskilt.storbukas.no/DITT-SKILT](https://personlig-bilskilt.storbukas.no/). Det er en begrensing på syv tegn, samme som [Statens Vegvesen](https://www.vegvesen.no/kjoretoy/Eie+og+vedlikeholde/skilt/personlig-bilskilt).
 
 > `https://personlig-bilskilt.storbukas.no/DITT-SKILT`
 
@@ -32,13 +32,13 @@ Alt du trenger å gjøre for å generere personlig bilskilt er å legge ved teks
 <img src="https://personlig-bilskilt.storbukas.no/2SLOW">
 <img src="https://personlig-bilskilt.storbukas.no/1337">
 ```
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/TACO" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/TACO">
 </a>
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/2SLOW" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/2SLOW">
 </a>
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/1337" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/1337">
 </a>
 
@@ -48,7 +48,7 @@ Du kan også bruke vanlige kjennemerker
 <img src="https://personlig-bilskilt.storbukas.no/PR12345">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/PR12345" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/PR12345">
 </a>
 
@@ -62,7 +62,7 @@ Du kan også generere andre skilttyper
 <img src="https://personlig-bilskilt.storbukas.no/svart/RÅNER">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/svart/RÅNER" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/svart/RÅNER">
 </a>
 
@@ -72,7 +72,7 @@ Du kan også generere andre skilttyper
 <img src="https://personlig-bilskilt.storbukas.no/varebil/SNEKKER">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/varebil/SNEKKER" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/varebil/SNEKKER">
 </a>
 
@@ -82,7 +82,7 @@ Du kan også generere andre skilttyper
 <img src="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/svalbard/ISBJØRN">
 </a>
 
@@ -92,7 +92,7 @@ Du kan også generere andre skilttyper
 <img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/militaer/AK-47" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
 </a>
 
@@ -103,7 +103,7 @@ Du kan også generere andre skilttyper
 <img src="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE">
 ```
 
-<a href="https://fiy.no/svv" target="_blank">
+<a href="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE" target="_blank">
   <img src="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE">
 </a>
 
