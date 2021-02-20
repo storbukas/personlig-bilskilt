@@ -52,6 +52,50 @@ Du kan også bruke vanlige kjennemerker
   <img src="https://personlig-bilskilt.storbukas.no/PR12345">
 </a>
 
+### Andre skilttyper
+
+Du kan også generere andre skilttyper
+
+#### SVART FLAGGBÅND
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/svart/RÅNER">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/svart/RÅNER">
+</a>
+
+#### VAREBIL
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/varebil/SNEKKER">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/varebil/SNEKKER">
+</a>
+
+#### SVALBARD
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/svalbard/SNØ">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/svalbard/SNØ">
+</a>
+
+#### AMBASSADE
+
+```html
+<img src="https://personlig-bilskilt.storbukas.no/ambassade/USA">
+```
+
+<a href="https://fiy.no/svv" target="_blank">
+  <img src="https://personlig-bilskilt.storbukas.no/ambassade/USA">
+</a>
+
 ## Deploy på GCP (Google Cloud Platform)
 
 > *Forutsetter at du allerede har [satt opp et prosjekt på Google Cloud](https://cloud.google.com/ai-platform/notebooks/docs/before-you-begin)*.
