@@ -205,7 +205,7 @@ Dette kan du teste her: http://git.storbukas.no/personlig-kjennemerke.svg?kjenne
       </g>
 
       <!-- BAKGRUNNSFARGE FLAGGBÅND -->
-      <g fill="#FLAGG_BAKGRUNNSFARGE" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+      <g fill="#003399" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
         <path vector-effect="none" fill-rule="evenodd" d="M15,10 L29,10 L29,52 L15,52 C12.2386,52 10,49.7614 10,47 L10,15 C10,12.2386 12.2386,10 15,10 " />
       </g>
       
@@ -236,14 +236,26 @@ Dette kan du teste her: http://git.storbukas.no/personlig-kjennemerke.svg?kjenne
       </g>
       
       <!-- BAKGRUNNSFARGE SKILT -->
-      <g fill="#SKILT_BAKGRUNNSFARGE" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
+      <g fill="#FFFFFF" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)">
         <path vector-effect="none" fill-rule="evenodd" d="M29,10 L221,10 C223.761,10 226,12.2386 226,15 L226,47 C226,49.7614 223.761,52 221,52 L29,52 L29,10" />
       </g>
 
       <!-- TEKST SKILT-->
-      <text id="kjennemerkeText" x="127" y="44" fill="#TEKST_FARGE" stroke="#TEKST_FARGE" font-size="36px" letter-spacing="2" text-anchor="middle" font-family="LFT Etica, Lucida Sans Unicode, Lucida Grande, sans-serif">GEEK</text>
+      <text id="kjennemerkeText" x="127" y="44" fill="#000000" stroke="#000000" font-size="36px" letter-spacing="2" text-anchor="middle" font-family="LFT Etica, Lucida Sans Unicode, Lucida Grande, sans-serif">GEEK</text>
   </g>
 </svg>
 ```
 
 Du kan også laste ned SVG-filen direkte, og endre teksten som vises der (da kan du også fjerne `<script>` taggen).
+
+## Bidrag
+
+Vennligst les [CONTRIBUTING](https://gist.github.com/storbukas/8cbe5783cb53d5e7adede003f246c2df) for mer informasjon om retningslinjer for bidrag, og prosessen for å opprette pull-request.
+
+## Versjonering
+
+Vi bruker [SemVer](http://semver.org/) for versjonering. For tilgjengelige versjoner, se [tags](https://github.com/storbukas/personlig-bilskilt/tags) i dette depotet
+
+## Lisens
+
+Dette prosjektet er lisensiert under MIT-lisensen - se [LISENS-filen](LICENSE) for detaljer.
