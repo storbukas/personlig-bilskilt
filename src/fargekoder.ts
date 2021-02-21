@@ -1,63 +1,73 @@
-export interface FargeKode {
-    skiltrammeFarge: string;
-    skiltBakgrunnsfarge: string;
-    flaggBakgrunnsfarge: string;
-    tekstFarge: string;
-}
+import { IFargeKode, SkiltType } from "./skiltTyper";
 
-export const VANLIG_SKILT: FargeKode = {
-    skiltrammeFarge: "000000",
-    skiltBakgrunnsfarge: "FFFFFF",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "000000"
-}
+const VelgFargekode = (skiltType: SkiltType): IFargeKode => {
+  switch (skiltType) {
+    case SkiltType.ambassade:
+      return AMBASSADE_SKILT;
+    case SkiltType.militaer:
+      return MILITÆR_SKILT;
+    case SkiltType.rally:
+      return RALLY_SKILT;
+    case SkiltType.svalbard:
+      return SVALBARD_SKILT;
+    case SkiltType.varebil:
+      return VAREBIL_SKILT;
+    case SkiltType.vanlig:
+      return VANLIG_SKILT;
+    case SkiltType.svart:
+      return VANLIG_SKILT_SVART_FLAGGBÅND;
+    default:
+      return VANLIG_SKILT;
+  }
+};
 
-export const VANLIG_SKILT_SVART_FLAGGBÅND: FargeKode = {
-    skiltrammeFarge: "000000",
-    skiltBakgrunnsfarge: "FFFFFF",
-    flaggBakgrunnsfarge: "000000",
-    tekstFarge: "000000"
-}
+const VANLIG_SKILT: IFargeKode = {
+  skiltrammeFarge: "000000",
+  skiltBakgrunnsfarge: "FFFFFF",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "000000",
+};
 
-export const VAREBIL_SKILT: FargeKode = {
-    skiltrammeFarge: "000000",
-    skiltBakgrunnsfarge: "019460",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "000000"
-}
+const VANLIG_SKILT_SVART_FLAGGBÅND: IFargeKode = {
+  skiltrammeFarge: "000000",
+  skiltBakgrunnsfarge: "FFFFFF",
+  flaggBakgrunnsfarge: "000000",
+  tekstFarge: "000000",
+};
 
-export const SVALBARD_SKILT: FargeKode = {
-    skiltrammeFarge: "FFD51F",
-    skiltBakgrunnsfarge: "000000",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "FFD51F"
-}
+const VAREBIL_SKILT: IFargeKode = {
+  skiltrammeFarge: "000000",
+  skiltBakgrunnsfarge: "019460",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "000000",
+};
 
-export const AMBASSADE_SKILT: FargeKode = {
-    skiltrammeFarge: "FE7400",
-    skiltBakgrunnsfarge: "1A85FF",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "FE7400"
-}
+const SVALBARD_SKILT: IFargeKode = {
+  skiltrammeFarge: "FFD51F",
+  skiltBakgrunnsfarge: "000000",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "FFD51F",
+};
 
-export const MILITÆR_SKILT: FargeKode = {
-    skiltrammeFarge: "000000",
-    skiltBakgrunnsfarge: "FFD51F",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "000000"
-}
+const AMBASSADE_SKILT: IFargeKode = {
+  skiltrammeFarge: "FE7400",
+  skiltBakgrunnsfarge: "1A85FF",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "FE7400",
+};
 
-export const RALLY_SKILT: FargeKode = {
-    skiltrammeFarge: "FFFFFF",
-    skiltBakgrunnsfarge: "000000",
-    flaggBakgrunnsfarge: "003399",
-    tekstFarge: "FFFFFF"
-}
+const MILITÆR_SKILT: IFargeKode = {
+  skiltrammeFarge: "000000",
+  skiltBakgrunnsfarge: "FFD51F",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "000000",
+};
 
-export const settFarger = (fil: any, fargeKode: FargeKode): any => {
-    return fil.replace("SKILTRAMME_FARGE", fargeKode.skiltrammeFarge)
-        .replace("SKILT_BAKGRUNNSFARGE", fargeKode.skiltBakgrunnsfarge)
-        .replace("FLAGG_BAKGRUNNSFARGE", fargeKode.flaggBakgrunnsfarge)
-        .replace("TEKST_FARGE", fargeKode.tekstFarge)
-        .replace("TEKST_FARGE", fargeKode.tekstFarge);
-}
+const RALLY_SKILT: IFargeKode = {
+  skiltrammeFarge: "FFFFFF",
+  skiltBakgrunnsfarge: "000000",
+  flaggBakgrunnsfarge: "003399",
+  tekstFarge: "FFFFFF",
+};
+
+export default VelgFargekode;
