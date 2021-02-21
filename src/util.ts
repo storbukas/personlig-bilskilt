@@ -7,6 +7,7 @@ const settFarger = (fil: any, fargeKode: IFargeKode): any => {
     .replace(SkiltFarge.ramme, fargeKode.skiltrammeFarge)
     .replace(SkiltFarge.bakgrunn, fargeKode.skiltBakgrunnsfarge)
     .replace(SkiltFarge.flaggBakgrunn, fargeKode.flaggBakgrunnsfarge)
+    .replace(SkiltFarge.tekstFarge, fargeKode.tekstFarge)
     .replace(SkiltFarge.tekstFarge, fargeKode.tekstFarge);
 };
 
