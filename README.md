@@ -261,7 +261,7 @@ Du kan også laste ned SVG-filen direkte, og endre teksten som vises der (da kan
 
 ## Bidrag
 
-Vennligst les [CONTRIBUTING](https://gist.github.com/storbukas/8cbe5783cb53d5e7adede003f246c2df) for mer informasjon om retningslinjer for bidrag, og prosessen for å opprette pull-request.
+Alle bidrag er velkomne.
 
 ## Versjonering
 
