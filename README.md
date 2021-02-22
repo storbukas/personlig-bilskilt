@@ -89,11 +89,11 @@ Du kan også generere andre skilttyper
 #### MILITÆR
 
 ```html
-<img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
+<img src="https://personlig-bilskilt.storbukas.no/militaer/HV">
 ```
 
 <a href="https://personlig-bilskilt.storbukas.no/militaer/AK-47" target="_blank">
-  <img src="https://personlig-bilskilt.storbukas.no/militaer/AK-47">
+  <img src="https://personlig-bilskilt.storbukas.no/militaer/HV">
 </a>
 
 
