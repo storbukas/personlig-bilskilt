@@ -23,6 +23,8 @@ jobs:
         with:
           project_id: ${{ secrets.PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
+      
+      - run: gcloud info
 
       # - name: Install
       #   run: npm install
@@ -31,4 +33,4 @@ jobs:
       #   run: npm run gcp-build
     
       - name: Deploy to App Engine
-        run: gcloud app deploy --quiet
+        run: gcloud app deploy --quiet --project storbukas-no
