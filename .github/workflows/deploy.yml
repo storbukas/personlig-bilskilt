@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - deploy-to-gcp
+      - main
 
 name: Deploy to Google App Engine
 
