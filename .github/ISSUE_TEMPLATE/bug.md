@@ -1,3 +1,8 @@
+---
+name: Bug Report
+about: Hvis noe ikke oppfører seg som du forventer
+labels: bug
+---
 Før du oppretter et nytt issue, må du sjekke om et lignende issue allerede eksisterer eller har blitt lukket før.
 
 ### Når du rapporterer en feil, må du huske å ta med følgende:

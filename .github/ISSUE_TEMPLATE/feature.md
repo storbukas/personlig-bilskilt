@@ -1,3 +1,8 @@
+---
+name: Feature Request
+about: Forslag til ny eller endret funksjonalitet
+labels: enhancement 
+---
 Før du oppretter et nytt issue, må du sjekke om et lignende issue allerede eksisterer eller har blitt lukket før.
 
 ### Når du oppretter et nytt issue for en feature-request, vennligst legg til så mange detaljer som mulig:
