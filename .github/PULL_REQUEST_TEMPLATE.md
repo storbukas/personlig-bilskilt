@@ -1,28 +1,25 @@
-## Proposed changes
+## Foreslåtte endringer
 
-Describe the big picture of your changes here to communicate to the maintainers why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue.
+Beskriv det overordnede målet av endringene dine her for å kommunisere til utviklerne hvorfor vi skal godta denne pull-requesten. Hvis det løser en feil eller en feature-request, må du linke til gjeldende issue.
 
-## Types of changes
+## Typer endringer
 
-What types of changes does your code introduce to Appium?
-_Put an `x` in the boxes that apply_
+Hvilke typer endringer introduserer koden din for **personlig-bilskilt**?
 
-- [ ] Bugfix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation Update (if none of the other choices apply)
+*Legg et 'x' i boksene som gjelder*
 
-## Checklist
+- [ ] Bugfix (*non-breaking change* som løser et problem)
+- [ ] Ny funksjon (*non-breaking change* som gir funksjonalitet)
+- [ ] Breaking change (fix eller funksjon som vil føre til at eksisterende funksjonalitet ikke fungerer som forventet)
+- [ ] Dokumentasjonsoppdatering (hvis ingen av de andre valgene gjelder)
 
-_Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code._
+## Sjekkliste
 
-<!-- - [ ] I have read the [CONTRIBUTING](https://github.com/appium/appium/blob/master/CONTRIBUTING.md) doc
-- [ ] I have signed the [CLA](https://cla.js.foundation/appium/appium)
-- [ ] Lint and unit tests pass locally with my changes
-- [ ] I have added tests that prove my fix is effective or that my feature works -->
-- [ ] I have added necessary documentation (if appropriate)
-- [ ] Any dependent changes have been merged and published in downstream modules
+*Legg et 'x' i boksene som gjelder. Du kan også fylle ut disse etter at du har opprettet PR. Hvis du er usikker på noen av dem, ikke nøl med å spørre. Vi er her for å hjelpe! Dette er ganske enkelt en påminnelse om hva vi skal se etter før vi slår sammen koden din.*
 
-## Further comments
-
-If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...
+<!-- [] Jeg har lest dokumentet [CONTRIBUTING] (https://github.com/storbukas/personlig-bilskilt/blob/master/CONTRIBUTING.md)
+- [ ] Jeg har signert [CLA] (https://cla.js.foundation/storbukas/personlig-bilskilt)
+- [ ] Lint og enhetstester passerer lokalt med endringene mine
+- [ ] Jeg har lagt til tester som viser at min løsning er effektiv eller at funksjonen min fungerer -->
+- [ ] Jeg har lagt til nødvendig dokumentasjon (hvis aktuelt)
+- [ ] Eventuelle avhengige endringer er slått sammen og publisert i nedstrømsmoduler

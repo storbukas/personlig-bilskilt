@@ -1,7 +1,7 @@
-Before you open an issue, please check if a similar issue already exists or has been closed before.
+Før du oppretter et nytt issue, må du sjekke om et lignende issue allerede eksisterer eller har blitt lukket før.
 
-### When you open an issue for a feature request, please add as much detail as possible:
-- [ ] A descriptive title
-- [ ] A description of the problem you're trying to solve, including *why* you think this is a problem
-- [ ] An overview of the suggested solution
-- [ ] If the feature changes current behavior, reasons why your solution is better
+### Når du oppretter et nytt issue for en feature-request, vennligst legg til så mange detaljer som mulig:
+- [ ] En beskrivende tittel
+- [ ] En beskrivelse av problemet du prøver å løse, inkludert *hvorfor* du tror dette er et problem
+- [ ] En oversikt over den foreslåtte løsningen
+- [ ] Hvis funksjonen endrer gjeldende atferd, kan du be om hvorfor løsningen din er bedre 
