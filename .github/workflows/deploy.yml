@@ -25,7 +25,6 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
 
       - name: Deploy to App Engine
-        shell: bash
         env:
-          PROJECT_ID: ${{ secrets.PROJECT_ID }}
+          PROJECT_ID: ${{ secrets.GCP_PROJECT }}
         run: gcloud app deploy --quiet --project "$PROJECT_ID"
