@@ -1,21 +1,25 @@
 {
   "name": "personlig-bilskilt",
-  "description": "Personlig bilskilt i SVG-format. Kan brukes som badge på GitHub.",
-  "version": "0.0.1",
+  "description": "Skilt-generator som lager SVG-filer av ditt personlige bilskilt",
+  "version": "1.3.0",
   "private": false,
   "license": "MIT",
   "author": "Lars Erik Storbukås",
   "main": "./dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "gcp-build": "tsc -p .",
-    "deploy": "gcloud app deploy"
+    "start:dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc -p .",
+    "gcp-build": "npm run build",
+    "deploy": "gcloud app deploy",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "express": "^4.16.4"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
-    "typescript": "^3.2.2"
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.2"
   }
 }

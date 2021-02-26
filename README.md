@@ -107,6 +107,47 @@ Du kan også generere andre skilttyper
   <img src="https://personlig-bilskilt.storbukas.no/ambassade/TAXFREE">
 </a>
 
+## Lokal utvikling
+
+Start med å hente repoet
+
+```
+git clone https://github.com/storbukas/personlig-bilskilt
+```
+
+Gå inn i mappen
+
+```
+cd personlig-bilskilt
+```
+
+Istaller avhengigheter
+
+```
+npm install
+```
+
+Kjør opp applikasjonen
+
+```
+npm run build
+npm start
+```
+
+For hver endring du gjør er du nødt til å bygge på nytt for å se resultatet, med `npm run build`
+
+Hvis du vil serve applikasjonen med hot-reloading, kan du kjøre følgende
+
+```
+npm run start:dev
+```
+
+Så er applikasjonen tilgjengelig på port **[8080](http://localhost:8080)**, altså [http://localhost:8080](http://localhost:8080)
+
+```
+App listening on port 8080
+```
+
 ## Deploy på GCP (Google Cloud Platform)
 
 > *Forutsetter at du allerede har [satt opp et prosjekt på Google Cloud](https://cloud.google.com/ai-platform/notebooks/docs/before-you-begin)*.
@@ -170,6 +211,44 @@ dispatch:
 ```
 
 Slik at jeg kan nå applikasjonen via https://personlig-bilskilt.storbukas.no.
+
+### Konfigurer deploy action (GitHub Action)
+
+[Deploy til App Engine](https://github.com/storbukas/personlig-bilskilt/blob/main/.github/workflows/deploy.yml) (GitHub Action) bruker secrets som må bli satt opp dersom du forker repoet, og vil at endringer på master automatisk blir deployet til GCP.
+
+```yaml
+- name: Setup Cloud SDK
+  uses: google-github-actions/setup-gcloud@v0.2.0
+  with:
+    project_id: ${{ secrets.GCP_PROJECT }}
+    service_account_key: ${{ secrets.GCP_SA_KEY }}
+```
+
+#### Konfigurasjon
+
+1. Opprett et nytt Google Cloud Project (eller velg et eksisterende prosjekt)
+
+2. [Initialiser App Engine-appen din med prosjektet ditt](https://cloud.google.com/appengine/docs/standard/nodejs/console#console)
+
+3. Opprett en **Google Cloud-tjenestekonto** eller velg en eksisterende
+
+4. Legg til følgende **Cloud IAM-roller** i tjenestekontoen din:
+
+     - `App Engine Admin` - tillater oppretting av nye App Engine-apper
+
+     - `Service Account User` - kreves for å distribuere til App Engine som servicekonto
+
+     - `Storage Admin` - tillater opplasting av kildekoden
+
+     - `Cloud Build Editor` - tillater bygging av kildekode
+
+5. Last ned en **JSON-tjenestekontonøkkel** for tjenestekontoen
+
+6. Legg til følgende **[secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)** i repoet:
+
+     - `GCP_PROJECT`: Google Cloud-prosjekt-ID
+
+     - `GCP_SA_KEY`: den nedlastede tjenestekontonøkkelen
 
 ## Standalone SVG-generering
 
