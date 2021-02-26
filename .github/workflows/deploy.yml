@@ -21,10 +21,8 @@ jobs:
       - name: Setup Cloud SDK
         uses: google-github-actions/setup-gcloud@v0.2.0
         with:
-          project_id: ${{ secrets.PROJECT_ID }}
+          project_id: ${{ secrets.GCP_PROJECT }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
 
       - name: Deploy to App Engine
-        env:
-          PROJECT_ID: ${{ secrets.GCP_PROJECT }}
-        run: gcloud app deploy --quiet --project "$PROJECT_ID"
+        run: gcloud app deploy --quiet
