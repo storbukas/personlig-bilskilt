@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to App Engine
         env:
           PROJECT_ID: ${{ secrets.PROJECT_ID }}
-        run: gcloud app deploy --quiet --project $PROJECT_ID
+        run: gcloud app deploy --quiet --project "$PROJECT_ID"
